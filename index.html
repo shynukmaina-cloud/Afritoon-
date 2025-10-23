@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AfriToon — Create AI Cartoons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <img src="assets/logo_light.png" alt="AfriToon" class="logo">
+      <div class="tag">Laughs from Africa, made by AI</div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+    </header>
+    <main class="main">
+      <section class="creator-card">
+        <div class="logo-face"><img src="assets/logo_face.png" alt="AfriToon face"></div>
+        <textarea id="prompt" placeholder="Type your story idea…">A Kikuyu teen arguing with cucu about Wi-Fi</textarea>
+        <div class="controls">
+          <div class="btn green" id="addVoiceBtn"><span>🎙 Add Voice (Demo)</span></div>
+          <label class="btn red" for="subToggle"><span>💬 Add Subtitles</span>
+            <input id="subToggle" type="checkbox" checked>
+          </label>
+        </div>
+        <div class="actions">
+          <button id="generateBtn" class="primary">🧠 Generate Video</button>
+        </div>
+        <div id="status" class="status">Demo voice uses your browser's speech synthesis (no API key needed).</div>
+      </section>
+      <section class="preview">
+        <h3>Preview</h3>
+        <div id="videoPreview" class="video-preview">
+          <video id="sampleVideo" controls style="display:none; width:100%"></video>
+          <div id="fallbackAnim" class="fallback">No video yet — press Generate</div>
+        </div>
+        <div class="share-row">
+          <button id="downloadBtn" class="small">⬇ Download</button>
+          <button id="shareBtn" class="small">↪ Share to TikTok (manual)</button>
+        </div>
+      </section>
+    </main>
+    <nav class="bottom-nav">
+      <button class="nav-item active">🏠 Home</button>
+      <button class="nav-item">🎙 Voices</button>
+      <button class="nav-item">🎞 Videos</button>
+      <button class="nav-item">⚙ Settings</button>
+      <button class="nav-item">🤖 Bots</button>
+    </nav>
+  </div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+:root{
+  --bg:#fbf6ed;
+  --card:#fff;
+  --accent1:#2e8b57;
+  --accent2:#e44d26;
+  --accent3:#f5a623;
+  --muted:#666;
+}
+body{font-family:Inter,Arial; background:linear-gradient(180deg,var(--bg),#fff); margin:0}
+#app{min-height:100vh; display:flex; flex-direction:column}
+.topbar{display:flex; align-items:center; gap:12px; padding:14px}
+.logo{height:56px}
+.tag{font-size:14px; color:var(--muted)}
+.theme-toggle{margin-left:auto; background:none; border:none; font-size:20px}
+textarea{width:100%; min-height:92px; border-radius:10px; padding:10px; border:1px solid #eee; font-size:16px}
+.btn{flex:1; padding:12px; border-radius:10px; text-align:center; color:#fff; font-weight:700}
+.green{background:var(--accent1)}
+.red{background:var(--accent2)}
+.primary{background:var(--accent3); padding:12px 18px; border:none; border-radius:12px; font-weight:800; font-size:18px}
+.bottom-nav{display:flex; justify-content:space-around; padding:8px; border-top:1px solid #eee}
+.nav-item.active{color:var(--accent1); font-weight:800}
